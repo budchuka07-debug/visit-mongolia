@@ -149,6 +149,7 @@ ${aliasRedirects}
   <url><loc>https://visitmongoliatours.com/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://visitmongoliatours.com/destinations/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://visitmongoliatours.com/tours/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://visitmongoliatours.com/gallery.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://visitmongoliatours.com/guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 ${destUrls}
 ${tourUrls}

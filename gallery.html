@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>蒙古旅游图库 | Visit Mongolia Tours</title>
+  <meta name="description" content="蒙古风景、游牧生活与真实行程照片。可上传您的照片到图库。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span>微信 / 支付宝：扫描本站二维码即可加好友或付款</span>
+      <span>WhatsApp：<a href="https://wa.me/97690283039" target="_blank" rel="noopener">+976 90283039</a></span>
+    </div>
+  </div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html"><b>蒙古<span>旅游</span></b></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="index.html#experiences">体验</a>
+        <a href="destinations/">目的地</a>
+        <a href="tours/">精品行程</a>
+        <a href="gallery.html">图库</a>
+        <a href="guide/">旅行指南</a>
+        <a href="about.html">关于我们</a>
+        <a href="contact.html">咨询预订</a>
+      </nav>
+      <button class="menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+<section class="page-hero" style="--hero-img:url('images/hero/hero-nomadic-mongolia.jpg')"><div class="container"><p class="kicker">图库</p><h1>蒙古真实照片</h1><p>风景、游牧与行程照片。欢迎从外面添加您的照片和说明。</p></div></section>
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-upload" id="add-photo">
+      <h3>添加照片</h3>
+      <p class="pay-note">上传蒙古旅行照片和一句说明。照片会进入图库并显示在网站上。</p>
+      <form id="gallery-form">
+        <div class="form-grid">
+          <div><label for="gallery_name">您的名字（选填）</label><input type="text" id="gallery_name" maxlength="80" placeholder="姓名 / 旅者名"></div>
+          <div><label for="gallery_title">说明</label><input type="text" id="gallery_title" maxlength="120" placeholder="例如：库苏古尔湖日出" required></div>
+          <div class="full"><label for="gallery_description">补充文字（选填）</label><textarea id="gallery_description" maxlength="600" placeholder="地点、季节或这一刻的感受"></textarea></div>
+          <div class="full"><label for="gallery_images">照片</label><input type="file" id="gallery_images" accept="image/*" multiple required></div>
+          <div class="full"><button class="btn btn-primary" type="submit">加入图库</button></div>
+        </div>
+        <div id="gallery-notice" class="notice"></div>
+      </form>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <img src="images/gallery/gallery1.jpg" alt="蒙古旅游图库 1">
+        <img src="images/gallery/gallery2.jpg" alt="蒙古旅游图库 2">
+        <img src="images/gallery/gallery3.jpg" alt="蒙古旅游图库 3">
+        <img src="images/gallery/gallery4.jpg" alt="蒙古旅游图库 4">
+        <img src="images/gallery/gallery5.jpg" alt="蒙古旅游图库 5">
+        <img src="images/gallery/gallery6.jpg" alt="蒙古旅游图库 6">
+        <img src="images/gallery/gallery7.jpg" alt="蒙古旅游图库 7">
+        <img src="images/gallery/gallery8.jpg" alt="蒙古旅游图库 8">
+        <img src="images/gallery/gallery9.jpg" alt="蒙古旅游图库 9">
+        <img src="images/gallery/gallery10.jpg" alt="蒙古旅游图库 10">
+        <img src="images/gallery/gallery11.jpg" alt="蒙古旅游图库 11">
+        <img src="images/gallery/gallery12.jpg" alt="蒙古旅游图库 12">
+        <img src="images/gallery/gallery13.jpg" alt="蒙古旅游图库 13">
+        <img src="images/gallery/gallery14.jpg" alt="蒙古旅游图库 14">
+        <img src="images/gallery/gallery15.jpg" alt="蒙古旅游图库 15">
+        <img src="images/gallery/gallery16.jpg" alt="蒙古旅游图库 16">
+        <img src="images/gallery/gallery17.jpg" alt="蒙古旅游图库 17">
+        <img src="images/gallery/gallery18.jpg" alt="蒙古旅游图库 18">
+        <img src="images/gallery/gallery19.jpg" alt="蒙古旅游图库 19">
+        <img src="images/gallery/gallery20.jpg" alt="蒙古旅游图库 20">
+        <img src="images/gallery/gallery21.jpg" alt="蒙古旅游图库 21">
+        <img src="images/gallery/gallery22.jpg" alt="蒙古旅游图库 22">
+        <img src="images/gallery/gallery23.jpg" alt="蒙古旅游图库 23">
+        <img src="images/gallery/gallery24.jpg" alt="蒙古旅游图库 24">
+        <img src="images/gallery/gallery25.jpg" alt="蒙古旅游图库 25">
+        <img src="images/gallery/gallery26.jpg" alt="蒙古旅游图库 26">
+        <img src="images/gallery/gallery27.jpg" alt="蒙古旅游图库 27">
+        <img src="images/gallery/gallery28.jpg" alt="蒙古旅游图库 28">
+        <img src="images/gallery/gallery29.jpg" alt="蒙古旅游图库 29">
+        <img src="images/gallery/gallery30.jpg" alt="蒙古旅游图库 30">
+    </div>
+  </div>
+</section>
+<div id="image-lightbox" class="image-lightbox"><span class="image-lightbox-close">&times;</span><img id="image-lightbox-img" alt="放大图片"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/gallery.js"></script>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>蒙古旅游</h3><p>Visit Mongolia Tours：蒙古当地私人定制。微信、支付宝可加好友并付款。</p></div>
+      <div><h4>页面</h4><a href="index.html">首页</a><a href="destinations/">目的地</a><a href="tours/">精品行程</a><a href="gallery.html">图库</a><a href="contact.html">咨询预订</a><a href="privacy-policy.html">隐私政策</a></div>
+      <div><h4>联系</h4><a href="https://wa.me/97690283039">+976 90283039</a><a href="mailto:bookingmongoliatour@gmail.com">bookingmongoliatour@gmail.com</a><span>微信 / 支付宝</span></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Visit Mongolia Tours. 蒙古当地旅行。</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

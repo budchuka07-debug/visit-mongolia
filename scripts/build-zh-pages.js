@@ -25,6 +25,8 @@ function shell(depth) {
     about: `${p}about.html`,
     contact: `${p}contact.html`,
     privacy: `${p}privacy-policy.html`,
+    gallery: `${p}gallery.html`,
+    exp: `${p}index.html#experiences`,
     img: `${p}images/`
   };
 }
@@ -57,8 +59,10 @@ function chrome(s) {
       <a class="logo" href="${s.home}"><b>蒙古<span>旅游</span></b></a>
       <nav class="nav-links" id="navLinks">
         <a href="${s.home}">首页</a>
+        <a href="${s.exp}">体验</a>
         <a href="${s.dest}">目的地</a>
         <a href="${s.tours}">精品行程</a>
+        <a href="${s.gallery}">图库</a>
         <a href="${s.guide}">旅行指南</a>
         <a href="${s.about}">关于我们</a>
         <a href="${s.contact}">咨询预订</a>
@@ -90,7 +94,7 @@ function footer(s) {
   <footer class="footer">
     <div class="container footer-grid">
       <div><h3>蒙古旅游</h3><p>Visit Mongolia Tours：蒙古当地私人定制。微信、支付宝可加好友并付款。</p></div>
-      <div><h4>页面</h4><a href="${s.home}">首页</a><a href="${s.dest}">目的地</a><a href="${s.tours}">精品行程</a><a href="${s.contact}">咨询预订</a><a href="${s.privacy}">隐私政策</a></div>
+      <div><h4>页面</h4><a href="${s.home}">首页</a><a href="${s.dest}">目的地</a><a href="${s.tours}">精品行程</a><a href="${s.gallery}">图库</a><a href="${s.contact}">咨询预订</a><a href="${s.privacy}">隐私政策</a></div>
       <div><h4>联系</h4><a href="https://wa.me/97690283039">+976 90283039</a><a href="mailto:bookingmongoliatour@gmail.com">bookingmongoliatour@gmail.com</a><span>微信 / 支付宝</span></div>
     </div>
     <div class="container footer-bottom">© 2026 Visit Mongolia Tours. 蒙古当地旅行。</div>
@@ -126,80 +130,11 @@ function write(rel, html) {
 const s0 = shell(0);
 const s1 = shell(1);
 
-const featuredTours = catalog.featuredTourIds.map((id) => catalog.tours.find((t) => t.id === id));
+const featuredTours = catalog.featuredTourIds.map((id) => catalog.tours.find((t) => t.id === id)).filter(Boolean);
+const { homePage, galleryPage } = require("./home-zh");
 
-write("index.html", `${head(s0, "蒙古旅游_私人定制游_戈壁沙漠库苏古尔湖 | Visit Mongolia Tours", "蒙古当地私人定制旅游：31 条线路覆盖戈壁沙漠、库苏古尔湖、哈拉和林、那达慕、驯鹿部落。支持微信、支付宝付款。", `<link rel="canonical" href="https://visitmongoliatours.com/" />`)}
-${chrome(s0)}
-  <section class="hero" style="--hero-img:url('images/hero/hero-1-mongolia.jpg')">
-    <div class="container hero-content">
-      <span class="badge">蒙古当地私人定制</span>
-      <h1>真实的蒙古行程：戈壁、草原、湖泊与那达慕。</h1>
-      <p>Visit Mongolia Tours 为乌兰巴托当地安排：专车、向导、营地与私人行程。中国旅客可用微信沟通，并支持微信支付与支付宝。现有 31 条可订线路。</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="contact.html">微信 / 支付宝咨询</a>
-        <a class="btn btn-outline" href="tours/">查看 31 条线路</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>31 条线路</strong><span>戈壁、湖泊、中部、西部、那达慕</span></div>
-        <div class="stat"><strong>微信支付</strong><span>支付宝 / Wise / SWIFT</span></div>
-        <div class="stat"><strong>私人小团</strong><span>专车司机，可调节奏</span></div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container grid-2">
-      <div class="lux-box">
-        <p class="kicker">为什么找当地团队</p>
-        <h2 class="title">先确认日期与线路，再安排落地服务。</h2>
-        <p>蒙古路途远、旺季营地紧张。我们先确认出行日期、人数和路线。微信、支付宝可直接扫码加好友或付款；Wise 与 SWIFT 同样接受。</p>
-        <p>线路覆盖戈壁、库苏古尔湖、中部哈拉和林、西部阿尔泰、那达慕、骑马与驯鹿部落。</p>
-      </div>
-      <img class="image-round" src="images/destinations/khongor-dunes.jpg" alt="蒙古戈壁沙漠旅游" />
-    </div>
-  </section>
-  <section class="section-dark">
-    <div class="container">
-      <div class="center"><p class="kicker">热门目的地</p><h2 class="title">按地区了解蒙古</h2><p class="desc">南部戈壁、北部蓝湖、中部古迹、西部猎鹰与成吉思汗故乡。</p></div>
-      <div class="grid-4">
-        <a class="mini-card" href="destinations/umnugovi.html"><img src="images/destinations/khongor-dunes.jpg" alt="南戈壁"><div class="card-body"><span class="tag">南部</span><h3>南戈壁</h3><p>洪格尔沙丘、火焰崖、鹰谷与荒漠峡谷。</p></div></a>
-        <a class="mini-card" href="destinations/khuvsgul.html"><img src="images/destinations/khuvsgul-lake.jpg" alt="库苏古尔湖"><div class="card-body"><span class="tag">北部</span><h3>库苏古尔湖</h3><p>蒙古蓝珍珠、针叶林与湖畔蒙古包。</p></div></a>
-        <a class="mini-card" href="destinations/uvurkhangai.html"><img src="images/destinations/erdene-zuu.jpg" alt="哈拉和林"><div class="card-body"><span class="tag">中部</span><h3>哈拉和林</h3><p>蒙古古都、额尔德尼召与鄂尔浑河谷。</p></div></a>
-        <a class="mini-card" href="destinations/bayan-ulgii.html"><img src="images/destinations/altai-tavan-bogd.jpg" alt="阿尔泰"><div class="card-body"><span class="tag">西部</span><h3>阿尔泰</h3><p>哈萨克猎鹰人、冰川与高山牧场。</p></div></a>
-      </div>
-      <div class="view-all"><a class="btn btn-primary" href="destinations/">全部目的地</a></div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="center"><p class="kicker">精品行程</p><h2 class="title">可按人数与季节调整的私人线路</h2><p class="desc">酒店等级、车辆、用餐与停留天数都可以定制。以下为 31 条线路中的热门选择。</p></div>
-      <div class="grid-3">
-        ${featuredTours.map((t) => `<a class="card" href="tours/${t.id}.html"><img src="${t.image}" alt="${t.name}"><div class="card-body"><span class="tag">${catalog.regionLabel[t.region]} · ${t.days} 天</span><h3>${t.name}</h3><p>${t.highlights.slice(0, 3).join("、")}。</p></div></a>`).join("\n        ")}
-      </div>
-      <div class="view-all"><a class="btn btn-primary" href="tours/">全部 31 条行程</a></div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="container contact-grid">
-      ${contactCard(s0)}
-      <div class="contact-card">
-        <form class="form" action="mailto:bookingmongoliatour@gmail.com" method="post" enctype="text/plain">
-          <input name="name" placeholder="姓名" required>
-          <input name="email" type="email" placeholder="邮箱" required>
-          <input name="wechat" placeholder="微信号 / 支付宝账号（选填）">
-          <select name="service">
-            <option>戈壁沙漠线路</option>
-            <option>库苏古尔湖线路</option>
-            <option>中部哈拉和林</option>
-            <option>那达慕节日</option>
-            <option>VIP 私人定制</option>
-          </select>
-          <textarea name="message" placeholder="请写出发日期、人数、想去的地方..."></textarea>
-          <button class="btn btn-primary" type="submit">发送咨询</button>
-        </form>
-      </div>
-    </div>
-  </section>
-${footer(s0)}`);
+write("index.html", homePage({ head, chrome, footer, contactCard, s0, featuredTours, catalog }));
+write("gallery.html", galleryPage({ head, chrome, footer, s0 }));
 
 write("contact.html", `${head(s0, "蒙古旅游咨询_微信支付宝 | Visit Mongolia Tours", "用微信、支付宝、WhatsApp 或邮箱咨询蒙古私人定制。")}
 ${chrome(s0)}
