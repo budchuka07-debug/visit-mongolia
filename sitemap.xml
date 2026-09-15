@@ -6,8 +6,44 @@
   <url><loc>https://visitmongoliatours.com/destinations/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://visitmongoliatours.com/tours/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://visitmongoliatours.com/guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://visitmongoliatours.com/tours/gobi-luxury.html</loc><priority>0.8</priority></url>
-  <url><loc>https://visitmongoliatours.com/tours/classic-mongolia.html</loc><priority>0.8</priority></url>
-  <url><loc>https://visitmongoliatours.com/tours/khuvsgul-north.html</loc><priority>0.8</priority></url>
-  <url><loc>https://visitmongoliatours.com/contact.html</loc><priority>0.9</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/umnugovi.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/dundgovi.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/khuvsgul.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/uvurkhangai.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/bayan-ulgii.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/arkhangai.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/khentii.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/tuv.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/destinations/selenge.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-highlights-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-classic-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/deep-gobi-10d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-central-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/central-classic-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/orkhon-valley-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/kharkhorum-3d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/amar-aglag-4d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/khangai-adventure-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/tsenkher-khorgo-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/horse-steppe-3d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/horse-nomad-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/mountain-horse-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/khuvsgul-lake-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/khuvsgul-north-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/taiga-reindeer-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/altai-tavan-bogd-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/western-ultimates-9d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/helicopter-expedition-1d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/vip-grand-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-khuvsgul-loop-14d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-khuvsgul-comfort-14d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/central-gobi-classic-10d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/terelj-horse-nature-2d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/hustai-nomad-elsen-4d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/naadam-terelj-3d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/naadam-gobi-7d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/naadam-khuvsgul-8d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-flight-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/khuvsgul-flight-5d.html</loc><priority>0.8</priority></url>
+  <url><loc>https://visitmongoliatours.com/tours/gobi-khuvsgul-flight-10d.html</loc><priority>0.8</priority></url>
 </urlset>
