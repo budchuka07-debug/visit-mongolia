@@ -51,7 +51,15 @@ function chrome(s) {
   <div class="topbar">
     <div class="container">
       <span>微信 / 支付宝：扫描本站二维码即可加好友或付款</span>
-      <span>WhatsApp：<a href="https://wa.me/97690283039" target="_blank" rel="noopener">+976 90283039</a></span>
+      <span class="topbar-right">
+        WhatsApp：<a href="https://wa.me/97690283039" target="_blank" rel="noopener">+976 90283039</a>
+        <span class="lang" aria-label="Language">
+          <a href="https://bookingmongolia.com/">EN</a>
+          <a href="https://bookingmongolia.com/?lang=ja">日本語</a>
+          <a href="https://bookingmongolia.com/?lang=ko">한국어</a>
+          <a class="active" href="${s.home}" hreflang="zh-CN" lang="zh-CN">中文</a>
+        </span>
+      </span>
     </div>
   </div>
   <header>
