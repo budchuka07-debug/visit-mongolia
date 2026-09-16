@@ -112,7 +112,8 @@ ${footer(s1)}`);
   write("mn.html", `<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=index.html"><link rel="canonical" href="https://visitmongoliatours.com/"><title>蒙古旅游</title></head><body><p><a href="index.html">进入中文网站</a></p></body></html>`);
 
   const aliasRedirects = Object.entries(catalog.aliases).map(([from, to]) => `/tours/${from} /tours/${to} 301`).join("\n");
-  write("_redirects", `/mn.html /index.html 301
+  write("_redirects", `/gallery /gallery.html 301
+/mn.html /index.html 301
 /zh /index.html 301
 /zh/ /index.html 301
 /zh/index.html /index.html 301

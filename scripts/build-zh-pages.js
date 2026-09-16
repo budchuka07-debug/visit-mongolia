@@ -27,7 +27,8 @@ function shell(depth) {
     privacy: `${p}privacy-policy.html`,
     gallery: `${p}gallery.html`,
     exp: `${p}index.html#experiences`,
-    img: `${p}images/`
+    img: `${p}images/`,
+    ga4: `${p}js/ga4.js`
   };
 }
 
@@ -40,6 +41,7 @@ function head(s, title, desc, extra = "") {
   <title>${title}</title>
   <meta name="description" content="${desc}" />
   <meta name="robots" content="index,follow" />
+  <script src="${s.ga4}"></script>
   <link rel="stylesheet" href="${s.css}" />
   ${extra}
 </head>
@@ -181,6 +183,7 @@ ${chrome(s0)}
 <section><div class="container lux-box">
 <h2>我们可能收集的信息</h2>
 <p>您主动提供的姓名、邮箱、微信、电话与行程需求；以及网站访问中的基础技术信息。</p>
+<p>我们使用 Google Analytics（衡量 ID：G-XDG8KZWZCM）统计页面访问，用于改进网站。该服务由 Google 处理相关数据。</p>
 <h2>用途</h2>
 <p>用于回复咨询、安排行程、改进网站，以及在您同意后处理预订相关沟通。</p>
 <h2>联系</h2>
